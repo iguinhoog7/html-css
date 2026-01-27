@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de houver</title>
+    <style>
+        #exhouver{
+        border: 5px solid transparent;
+         width: 400px;
+            height: 300px;
+        }
+
+       #exhouver:hover{
+            color: steelblue;
+            text-align: center;
+            text-decoration: underline;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            height: 300px;
+            border: 5px;
+            border-style: solid;
+            border-color: blue;
+            /* ou border: 5px solid blue; */
+           margin: auto;
+            margin-bottom: 50px;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            padding-right: 52px; 
+            /* ou padding: 10px 52px 10px 20px; */
+            outline: 5px;
+            outline-style: dashed;
+            outline-color: red;
+            /*ou outline: 5px dashed red;*/
+        }
+        div > a{
+            display: none;
+}
+
+div:hover > .link2{
+    display: block;
+    color: white;
+    background-color: purple;
+    width: 100px;
+}
+div > p{
+    display: none;
+}
+
+div:hover{
+ color: yellow;
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: purple;
+    width: 170px;
+    height: 50px;
+}
+
+       .linkex{
+        display: block;
+   padding: 10px 10px 10px 10px;
+   border: 10px solid orange;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="exhouver">Exemplo de houver</h1>
+    <p>paragrafos sao exemplos de box-level,mas os<a href="https://www.youtube.com/watch?v=-CPoDvZLQ6k&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=25" class="linkex">os links são exemplos de caixas inline-level</a>vamos ver como tudo isso funciona</p>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div style="background-color: purple; width: 150px;">PASSE O MOUSSE AQUI!
+        <p>TEXTO ESCONDIDO!!!!</p>
+        <a href="https://www.youtube.com/watch?v=WPtRX4n0UJs&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=21" target="_blank"class="link2">Comprar</a>
+    </div>
+    <P>Fim do exemplo.</P>
+    
+</body>
+</html>

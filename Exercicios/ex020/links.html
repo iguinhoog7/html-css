@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        body {
+            background-image: linear-gradient(to left,lightblue,#4B074B);
+            font-family: "Dancing Script", cursive;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h1:hover {
+            color: azure;
+            font-size: 3.1em;
+        }
+        a {
+            color: #D313D3;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .spotify:hover {
+            color: green;
+            text-decoration: underline;
+            font-size: 25px;
+        } 
+        .spotify:active {
+            color: darkgreen;
+        }
+        .spotify::after {
+            content: " ♪";
+        }
+        .Seta1 {
+            display: none;
+            font-weight: bold;
+        }
+        :hover >.Seta1 {
+            display: inline;
+        }
+        .youtube:hover {
+            color: red;
+            text-decoration: underline;
+                 font-size: 25px;
+        }
+        .youtube:active {
+            color: darkred;
+        }
+        .Seta2 {
+            display: none;
+            font-weight: bold;
+        }
+        :hover >.Seta2 {
+            display: inline;
+        }
+        .github:hover {
+            color: skyblue;
+            text-decoration: underline;
+                 font-size: 25px;
+        }
+        .github:active {
+            color: deepskyblue;
+        }
+        .Seta3 {
+            display: none;
+            font-weight: bold;
+        }
+        :hover >.Seta3 {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leandro 777</h1>
+    <ul style="display: inline-block;">
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22"class="youtube" target="_blank"><p class="Seta1">⇒</p>Canal do youtube</a></li>
+        <li><a href="https://open.spotify.com/intl-pt/album/3S91wF3EWG7OvRjsK9F2lx"class="spotify" target="_blank"><p class="Seta2">⇒</p>spotify</a></li>
+        <li><a href="https://github.com/iguinhoog7"class="github" target="_blank"><p class="Seta3">⇒</p>Repositorio no github</a></li>
+    </ul>
+</body>
+</html>
