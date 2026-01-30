@@ -137,8 +137,9 @@ div.video > iframe{
     display: block;
     border-radius: 10px;
     margin: auto;
-    width: 65%;
-    padding: 10px 0px 20px 0px;
+    width: 97%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-bottom: 30px;
 }
 aside {
